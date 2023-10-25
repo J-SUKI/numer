@@ -1,0 +1,23 @@
+import scipy.integrate as spi
+a = 2
+b = 8
+
+def f(x):
+    return 4*x**5 - 3*x**4 + x**3 - 6*x + 2
+
+def single_trapezoidal(a,b):
+    f_x0 = f(a)
+    f_x1 = f(b)
+    I = ((b-a)/2)*(f_x0+f_x1)
+    return I
+
+I = single_trapezoidal(a,b)
+integral_value, _ = spi.quad(f, a, b)
+error = abs((integral_value - I) / integral_value)
+ 
+print(f"I = {I}")
+print(f"Error = {error}")
+
+
+    
+    

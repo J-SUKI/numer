@@ -1,0 +1,47 @@
+.container{
+    text-align: center;
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+h1.center {
+    text-align: center;
+    color: #3b2f2f;
+}
+
+p.listhead{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.app-header {
+    border-bottom: 1px solid  rgb(247, 247, 247);
+    color: (13,202,240);
+    text-align: left;
+    padding-left: 10%;
+    background:  rgb(13,202,240) ;
+}
+  
+.app-header-item {
+    font-size: 20px;
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    
+}
+  
+.app-header-item-active {
+    background-color: rgb(211, 245, 239);
+}
+.main-one {
+    margin:10%;
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    margin-top: 50px;
+    
+}
