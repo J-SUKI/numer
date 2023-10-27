@@ -52,8 +52,8 @@ function CramerRule() {
     for (let i = 0; i < det.length; i++) {
       tempAns.push(<div key={i}>{`x${i + 1} = ${det[i].toFixed(2)}`}</div>);
     }
-    
     setMatrix({ a: matrix.a, b: matrix.b, c: tempAns });
+
   };
 
   function generate() {
@@ -65,7 +65,7 @@ function CramerRule() {
       let temp = [];
       for (let j = 0; j < size; j++) {
         let id = `column${i}row${j}`;
-        temp.push(<input key={id} id={id} className="input-cell" type="number"d3de/>);
+        temp.push(<input key={id} id={id} className="input-cell" type="number"/>);
       }
       array[i].push(
         <div key={`matrixA${i}`} className='matrix-row'>
@@ -84,10 +84,10 @@ function CramerRule() {
       <div className="input-container">
         <div className="form-group">
           <label htmlFor="function">Enter Size = </label>
-          <Form.Control name="size" type="number" onChange={(event) => setSize(parseInt(event.target.value))} value={size} />
+          <Form.Control name="size" type="number" onChange={(event) => setSize((event.target.value))} value={size} />
         </div>
 
-        <Button onClick={submit} variant="info">create</Button>
+        <Button onClick={submit} variant="info">Create</Button>
         <br /><br />
 
         <div className='matrix-container'>
@@ -99,7 +99,7 @@ function CramerRule() {
           </div>
         </div>
         <br />
-        <Button onClick={cal} variant="info"> Calculate</Button>
+        <Button onClick={cal} variant="info"> Calculate </Button>
         <br /><br />
         <div>
           {matrix.c}

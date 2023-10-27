@@ -17,7 +17,6 @@ function Home() {
                 <Link to="/Secant"><Button className="btn btn-info" size="lg">Secant</Button></Link>
                 <br/><br/>
 
-
                 <h2>Linear Algebraic Equation</h2>         
                 <Link to="/CramerRule"><Button className="btn btn-info" size="lg" active>Cramer Rule</Button></Link>
                 <Link to="/GaussElimination"><Button className="btn btn-info" size="lg">Gauss Elimination</Button></Link>
@@ -27,6 +26,8 @@ function Home() {
                 <Link to="/JacobiIteration"><Button className="btn btn-info" size="lg">Jacobi Iteration</Button></Link>
                 <Link to="/GaussSeidel"><Button className="btn btn-info" size="lg">Gauss-Seidel Iteration</Button></Link>
                 <Link to="/ConjugateGradient"><Button className="btn btn-info" size="lg">Conjugate Gradient</Button></Link>
+                <Link to="/CholeskyDecomposition"><Button className="btn btn-info" size="lg">Cholesky Decomposition</Button></Link>
+
                 <br/><br/>
 
                 <h2>Newton’s Divided-Difference</h2>  
