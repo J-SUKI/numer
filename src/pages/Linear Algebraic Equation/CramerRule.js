@@ -13,12 +13,9 @@ function CramerRule() {
 
   const submit = (e) => {
     e.preventDefault();
-    if (size > 15) {
-      alert('Size cannot be greater than 15.');
-    } else {
-      generate();
-    }
+    generate();
   };
+
 
   const cal = (e) => {
     e.preventDefault();
@@ -101,9 +98,7 @@ function CramerRule() {
         <br />
         <Button onClick={cal} variant="info"> Calculate </Button>
         <br /><br />
-        <div>
           {matrix.c}
-        </div>
       </div>
     </div>
   );

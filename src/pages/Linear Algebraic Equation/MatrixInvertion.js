@@ -105,11 +105,9 @@ function MatrixInvertion() {
             <div className="button-container">
               <Button onClick={cal} variant="info">Calculate</Button>
             </div><br /><br />
-            <div className="result-container">
               {matrix.c}
             </div>
           </div>
-        </div>
     );      
 }
 

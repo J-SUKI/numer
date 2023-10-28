@@ -17,18 +17,22 @@ function GaussElimination() {
   function genarate() {
     let array = [];
     for (let i = 0; i < size; i++) {
-      array[i] = [];
       let temp = [];
       for (let j = 0; j <= size; j++) {
-        temp.push(<input id={'column' + i + 'row' + j} style={{margin: '5px', width: '50px', height: '25px', textAlign: 'center'  }} />);
+        temp.push(
+          <input
+            id={"column" + i + "row" + j} className="input-cell"
+            type="number"
+          />
+        );
       }
-      array[i].push(
-        <div className="matrix-row" key={i}>
+      array.push(
+        <div key={`matrixA${i}`} className='matrix-row'>
           {temp}
         </div>
       );
     }
-    setmatrix({ a: array, b: [] });
+    setmatrix({ a: array });
   }
 
   
@@ -120,9 +124,8 @@ function GaussElimination() {
         <br />
 
         <Button onClick={submit} variant="info">Create</Button>
-        <br /><br />
+        <br />
 
-        <div className="matrix f">
           <div className="a">{matrix.a}</div>
         </div><br />
 
@@ -131,7 +134,6 @@ function GaussElimination() {
           {matrix.b}
         </div>
       </div>
-    </div>
   );
 }
 
