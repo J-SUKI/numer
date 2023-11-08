@@ -35,7 +35,7 @@ function LuDecomposition() {
     //setmatrix hook 
     setmatrix({a:array,b:arrayb})
   }
-////////////// error??
+////////////// error??  
   const cal = e =>{
     e.preventDefault()
     let calmatrix = []

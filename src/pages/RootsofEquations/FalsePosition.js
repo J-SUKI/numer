@@ -23,7 +23,7 @@ function FalsePosition() {
     const ansfxr = []
     const ansx1 = []
     const ansfx1 = []
-    const anser = []
+    const anser = [] 
   
     const submit = e => {
       e.preventDefault()
@@ -31,6 +31,7 @@ function FalsePosition() {
       er = err
       l = xl
       r = xr
+
       ansround.splice(0)
       ansxl.splice(0)
       ansfxl.splice(0)
@@ -63,16 +64,16 @@ function FalsePosition() {
         enabled: true
       },
       stroke: {
-        curve: 'straight'
+        curve: 'smooth'
       },
       title: {
-        text: 'Xm (Graph)',
+        text: 'Graph',
         align: 'left'
       },
       grid: {
         row: {
-          colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-          opacity: 0.5
+          colors: ['#f3f3f3', 'transparent'], 
+          opacity: 1
         },
       },
       xaxis: {
@@ -84,6 +85,7 @@ function FalsePosition() {
       chart.render()
     }
 
+    // คำนวณ
     function falsep(Func,Err,Xl,Xr){
       var parser = new Parser();
       var expr = parser.parse(Func);
@@ -94,10 +96,12 @@ function FalsePosition() {
       let t=""
   
       while(Er>Err){
-        let fxl =  expr.evaluate({ x: Xl })
+        let fxl =  expr.evaluate({ x: Xl }) 
         let fxr =  expr.evaluate({ x: Xr })
         let x1 = ((Xl*fxr)-(Xr*fxl))/(fxr-fxl);
         let fx1 =  expr.evaluate({ x: x1 })
+
+        //เพิ่มข้อมูล
         ansround.push(i)
         ansxl.push(Xl.toFixed(6))
         ansfxl.push(fxl.toFixed(6))
