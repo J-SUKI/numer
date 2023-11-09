@@ -29,8 +29,8 @@ function JacobiIteration() {
     )
 
     for (let i = 0; i < size; i++) {
-        array[i] = []; // render jsx arr
-        arrayb[i] = []; // render jsx arr for matrix b
+        array[i] = []; // render  arr
+        arrayb[i] = []; // render  arr for matrix b
         tempb.push(<input key={`rowb${i}`} id={`rowb${i}`} className="input-cell" type="number" />);
         let temp = []; // template input field for matrix a
         for (let j = 0; j < size; j++) {

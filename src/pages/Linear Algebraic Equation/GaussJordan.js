@@ -41,24 +41,21 @@ function GaussJordan() {
     for(let i=0 ; i<size ; i++){
       calmatrix[i] = []
       for(let j=0 ; j<=size ; j++){
-        //console.log(Number(document.getElementById('column'+j+'row'+j).value))
         calmatrix[i].push(Number(document.getElementById('column'+i+'row'+j).value)) 
       }
     }
-    //console.log(calmatrix)
+
 
     //Forward Elimination
     for(let i=0 ; i<=size ; i++){
       for(let j=i+1 ; j<size ; j++){
         let soltemp = calmatrix[j][i]/calmatrix[i][i]
-        //console.log(soltemp)
         for(let k=0 ; k<=size ; k++){
           let tem = (soltemp*calmatrix[i][k])
           calmatrix[j][k] -= tem
         }
       }
     }
-    //console.log(calmatrix)
 
     let arrans = []
     arrans[size] = calmatrix[size-1][size]/calmatrix[size-1][size-1]
@@ -67,14 +64,11 @@ function GaussJordan() {
       arrans[i] = calmatrix[i-1][size]
       for(let j=i+1 ; j<=size ; j++){
         let tempind = calmatrix[i-1][j-1]*arrans[j]
-        //console.log(tempind)
         arrans[i] -= tempind
-        //console.log(arrans)
       }
       arrans[i] = arrans[i]/calmatrix[i-1][i-1]
     }
     console.log(calmatrix)
-    //console.log(arrans)
 
     //output on page
     let ans = []

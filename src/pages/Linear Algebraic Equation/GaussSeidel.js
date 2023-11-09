@@ -17,11 +17,11 @@ function GaussSeidel() {
     genarate()
   }
 
-  //create input value matrix
+  //create input  matrix
   function genarate(){
-    let array = [] //array for create input feilds matrixa
-    let arrayb = [] //array for create input feilds matrixb       
-    let tempb = [] //template input feild for matrix b
+    let array = [] //array  matrixa
+    let arrayb = [] //array matrixb       
+    let tempb = [] //template  matrix b
     let er = []
 
     er.push(
@@ -34,10 +34,10 @@ function GaussSeidel() {
     )
 
     for (let i = 0; i < size; i++) {
-        array[i] = []; // render jsx arr
-        arrayb[i] = []; // render jsx arr for matrix b
+        array[i] = []; // render  arr
+        arrayb[i] = []; // render  arr for matrix b
         tempb.push(<input key={`rowb${i}`} id={`rowb${i}`} className="input-cell" type="number" />);
-        let temp = []; // template input field for matrix a
+        let temp = []; // template  matrix a
         for (let j = 0; j < size; j++) {
           let id = `column${i}row${j}`;
           temp.push(<input key={id} id={id} className="input-cell" type="number" />);
@@ -67,9 +67,7 @@ function GaussSeidel() {
       tempx[i] = 0
       temper[i] = 1000.0
       tempb.push(Number(document.getElementById('rowb'+i).value))
-      //console.log(Number(document.getElementById('rowb'+i).value))
       for(let j=0 ; j<size ; j++){
-        //console.log(Number(document.getElementById('column'+j+'row'+j).value))
         calmatrix[i].push(Number(document.getElementById('column'+i+'row'+j).value))
       }
     }
@@ -92,10 +90,8 @@ function GaussSeidel() {
           round++
         }
       }
-      //console.log(temper)
-      //console.log(x)
+      
     }
-    //console.log(x)
 
     let ansarr = []
     for(let a=0 ; a<x.length ; a++){

@@ -45,9 +45,7 @@ function MatrixInvertion() {
         for (let i = 0; i < size; i++) {
             calmatrix[i] = [];
             tempb.push(Number(document.getElementById('rowb' + i).value));
-            //console.log(Number(document.getElementById('rowb'+i).value))
             for (let j = 0; j < size; j++) {
-                //console.log(Number(document.getElementById('column'+j+'row'+j).value))
                 calmatrix[i].push(Number(document.getElementById('column' + i + 'row' + j).value));
             }
         }
