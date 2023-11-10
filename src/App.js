@@ -22,6 +22,9 @@ import JacobiIteration from './pages/Linear Algebraic Equation/JacobiIteration';
 import GaussSeidel from './pages/Linear Algebraic Equation/GaussSeidel';
 import ConjugateGradient from './pages/Linear Algebraic Equation/ConjugateGradient';
 
+import LinearInterpolation_L from './pages/Lagrange Interpolating Polynomial/LinearInterpolation_L';
+import PolynomialInterpolation_L from './pages/Lagrange Interpolating Polynomial/PolynomialInterpolation_L';
+import QuadraticInterpolation_L from './pages/Lagrange Interpolating Polynomial/QuadraticInterpolation_L';
 
 
 function App() {
@@ -46,6 +49,12 @@ function App() {
             <Route path="/JacobiIteration" element={<JacobiIteration />} />
             <Route path="/GaussSeidel" element={<GaussSeidel />} />
             <Route path="/ConjugateGradient" element={<ConjugateGradient />} /> 
+
+            <Route path="/LinearInterpolation_L" element={<LinearInterpolation_L />} /> 
+            <Route path="/PolynomialInterpolation_L" element={<PolynomialInterpolation_L/>} /> 
+            <Route path="/QuadraticInterpolation_L" element={<QuadraticInterpolation_L/>} /> 
+
+
 
 
           </Routes>

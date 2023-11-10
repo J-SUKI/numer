@@ -1,0 +1,67 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.short-input {
+    width: 250px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+#ans,
+#chart {
+    margin-top: 20px; 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.matrix-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .matrix {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .matrix-row {
+    display: flex;
+  }
+  
+  .input-cell {
+    width: 50px;
+    margin: 5px;
+  }
+  
+  .short-input {
+    width: 50px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  
